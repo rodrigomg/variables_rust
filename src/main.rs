@@ -5,7 +5,8 @@ fn main() {
     println!("The value of x is: {}", x);
     const MAX_POINTS: u32 = 100_000;
     println!("The value of MAX_POINTS is: {}", MAX_POINTS);
-    shadowing()
+    shadowing();
+    shadowing_types()
 }
 
 fn shadowing() {
@@ -13,4 +14,10 @@ fn shadowing() {
     let x = x + 1;
     let x = x * 2;
     println!("The value of x is: {}", x);
+}
+
+fn shadowing_types() {
+    let spaces = "      ";
+    let spaces = spaces.len();
+    println!("The value of spaces is: {}", spaces);
 }
