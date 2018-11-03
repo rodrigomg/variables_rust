@@ -21,3 +21,10 @@ fn shadowing_types() {
     let spaces = spaces.len();
     println!("The value of spaces is: {}", spaces);
 }
+
+/*fn shadowing_mut_diferences() {
+    let mut spaces = "      ";
+    spaces = spaces.len();
+    println!("The value of spaces is: {}", spaces);
+}
+*/
